@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nunito:wght@200;300;400;600;700&family=Outfit:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root{
+    --dark-blue: hsl(233, 47%, 7%); 
+    --desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%); 
+    --text-color: hsl(0, 0%, 100%); 
+    --transparent-paragraph: hsla(0, 0%, 100%, 0.75); 
+}
+
+body {
+    background-color: var(--dark-blue); 
+    color: var(--text-color); 
+}
+
+.container {
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#highlight {
+    color: var(--soft-violet); 
+}
+
+.info-box{
+    display: flex; 
+    height: 446px; 
+    width: 1074px; 
+    transition: transform 250ms;
+}
+
+.info-box:hover{
+    transform: translateY(-10px);
+}
+
+.intro {
+    background-color: var(--desaturated-blue);
+    font-family: 'Inter', sans-serif;
+    width: 50%; 
+    border-radius: 10px 0px 0px 10px; 
+    padding: 63px; 
+}
+
+p {
+    color: var(--transparent-paragraph);
+    font-size: 15px; 
+    width: 361px;
+    margin-top: 23px; 
+    line-height: 1.7; 
+}
+
+#team-photo {
+    border-radius: 0px 10px 10px 0px;
+    mix-blend-mode: multiply;
+    opacity: 85%; 
+}
+
+.image-box{
+    background: var(--soft-violet);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.stat-numbers, .stat-detail {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.number {
+    font-size: 21px; 
+    font-weight: bold;
+}
+
+.info-stats {
+    width: 354px; 
+}
+
+.stat-numbers {
+    margin-top: 90px; 
+}
+
+.stat-info {
+    font-size: 13px; 
+}
+
+.stat-detail {
+    text-transform: uppercase;
+    color: var(--transparent-paragraph);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 7px; 
+}
+
+
+@media only screen and (max-width: 375px) {
+    .container {
+        justify-content: initial;
+        height: 100%;
+    }
+    
+    .info-box {
+        flex-direction: column-reverse;
+        height: 836px; 
+        width: 555px; 
+        margin-top: 274px; 
+    }
+
+    h1, .paragraph-text {
+        text-align: center;
+        font-size: 40px; 
+    }
+     
+    p{
+        text-align: center; 
+        font-size: 21px; 
+    }
+
+    .intro {
+        width: 90%; 
+        border-radius: 0px 0px 10px 10px; 
+    }
+
+    .image-box {
+        width: 90%;
+        border-radius: 10px 10px 0px 0px; 
+    }
+
+    #team-photo{
+        width: 100%; 
+        height: 100%; 
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+  }
