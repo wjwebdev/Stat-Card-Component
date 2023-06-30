@@ -104,35 +104,49 @@ p {
 
 @media only screen and (max-width: 375px) {
     .container {
-        justify-content: initial;
-        height: 100%;
+      display: block; 
     }
     
     .info-box {
         flex-direction: column-reverse;
-        height: 836px; 
-        width: 555px; 
-        margin-top: 274px; 
+        height: 60%; 
+        width: 95%; 
+        position: absolute;
+        top: 320px;
+        left: 19px; 
     }
 
-    h1, .paragraph-text {
+    h1{
         text-align: center;
-        font-size: 40px; 
+        font-size: 27px; 
+        width: 250px; 
+        position:  relative; 
+        right: 30px; 
+        bottom: 20px; 
     }
      
     p{
-        text-align: center; 
-        font-size: 21px; 
+        font-size: 16px; 
+        width: 279px;
+        text-align: center;
+        position: relative; 
+        right: 38px; 
+        bottom: 29px; 
     }
 
     .intro {
         width: 90%; 
         border-radius: 0px 0px 10px 10px; 
+        height: 550px; 
     }
 
     .image-box {
         width: 90%;
         border-radius: 10px 10px 0px 0px; 
+        height: 250px; 
+        z-index: -1;
+        position: relative; 
+        top: 20px; 
     }
 
     #team-photo{
@@ -141,4 +155,45 @@ p {
         border-radius: 10px 10px 0px 0px;
     }
     
+    .info-stats {
+        width: 0px; 
+        display: flex;
+        position: relative; 
+        bottom: 8px; 
+
+    }
+
+    .stat-numbers {
+        height: 204px; 
+        position: relative; 
+        bottom: 81px;
+        left: 71px; 
+        flex-direction: column;
+    }
+
+    .number{
+        font-size: 25px; 
+    }
+
+    .stat-detail {
+        display: block; 
+    }
+
+    #company {
+        position: relative; 
+        top: 36px; 
+        right: 6px;
+    }
+
+    #template {
+        position: relative; 
+        top: 106px; 
+        right: 7px; 
+    }
+
+    #queries {
+        position: relative; 
+        top: 179px; 
+        left: 3px; 
+    }
   }
